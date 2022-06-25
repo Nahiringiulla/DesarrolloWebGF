@@ -14,7 +14,6 @@ body{
 
 /*NAVEGADOR DE TODA LA WEB*/
 
-
     nav{
         width: 100%;
         background-color: #1B2030 ;
@@ -24,30 +23,45 @@ body{
     }
     nav ul {
         list-style: none;
-        display: flex;
-
+        display:flex;
     }
     nav ul li{
         padding: 10px;
         margin-right: 40PX;
     }
-    nav ul li a {
+    .titulosnav{
         text-decoration: none;
-        color: #FFFF;
         text-align: center;
         font-weight:bold;
+        color: #FFFF;
     }
     .logo{
         margin-left: 15PX;
         margin-top: 10px;
     }
 
+    @media only screen and (max-width: 767px){
+        nav ul{
+            display:flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .navbar-toggler{
+            color: #F4F4F4;
+        }
+
+        .navbar-toggler-icon{
+            color: #E7246E;
+        }
+    }    
+
 /*MAIN*/
 
 /*APLICANDO GRID A INICIO*/
 
 /* vista desktop */
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 768px){
 
 .Inicio{
     display:grid;
@@ -180,17 +194,6 @@ body{
 /* los servicios quiero que luego me queden bien centrados sin ningun margen ocupando toda la página 
 supongo que luego voy a poder hacer bien esto con grid*/
 
-/* vista desktop */
-@media only screen and (min-width: 1024px){
-
-.servicios{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
-    row-gap: 0px;
-    column-gap: 0px;
-}
-
 .servicios li{
     list-style:none;
     display: flex;
@@ -198,6 +201,17 @@ supongo que luego voy a poder hacer bien esto con grid*/
 
 .servicios li img{
     width: 100%;
+}
+
+/* vista desktop */
+@media only screen and (min-width: 768px){
+
+.servicios{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 0px;
+    column-gap: 0px;
 }
 }
 
@@ -211,16 +225,6 @@ supongo que luego voy a poder hacer bien esto con grid*/
         row-gap: 0px;
         column-gap: 0px;
     }
-    
-    .servicios li{
-        list-style:none;
-        display: flex;
-    }
-    
-    .servicios li img{
-        width: 100%;
-    }
-
 }
 
 /*PÁGINA NOSOTROS*/
@@ -308,7 +312,7 @@ supongo que luego voy a poder hacer bien esto con grid*/
 /*PÁGINA CONTACTO - REDES SOCIALES*/
 
 /* vista desktop */
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 768px){
 .Gridredes{
     display:grid;
     grid-template-columns: repeat(2,1fr);
@@ -348,7 +352,7 @@ supongo que luego voy a poder hacer bien esto con grid*/
 /*PÁGINA CONTACTO - FORMULARIO*/
 
 /* vista desktop */
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 768px){
 .GridContacto{
     display:grid;
     grid-template-columns: repeat(2,1fr);
@@ -419,7 +423,7 @@ supongo que luego voy a poder hacer bien esto con grid*/
 /*PÁGINA CONTACTO - IMÁGENES*/ 
 
 /* vista desktop */
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 768px){
     .contacto_img{
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -457,4 +461,5 @@ footer{
 }
 footer h5{
     margin-left: 15px;
+    font-size: 12px;
 }
