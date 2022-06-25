@@ -48,11 +48,11 @@ body{
             align-items: center;
         }
         .navbar-toggler{
-            color: #F4F4F4;
+        color: #F4F4F4;
         }
 
         .navbar-toggler-icon{
-            color: #E7246E;
+        color: #E7246E;
         }
     }    
 
@@ -77,6 +77,7 @@ body{
 }
 .GF{
     color: #E7246E;
+    text-decoration: none;
 }
 
 .presentacion2{
@@ -84,6 +85,7 @@ body{
     padding-top: 60px;
     color: #49516F;
     font-size: 20px;
+    text-decoration: none;
 }
 
 .presentacion2bis{
@@ -91,6 +93,7 @@ body{
     padding-top: 5px;
     color: #49516F;
     font-size: 20px;
+    text-decoration: none;
 }
 
 .presentacion3{
@@ -142,6 +145,7 @@ body{
     }
     .GF{
         color: #E7246E;
+        text-decoration: none;
     }
     
     .presentacion2{
@@ -149,6 +153,7 @@ body{
         padding-top: 60px;
         color: #49516F;
         font-size: 20px;
+        text-decoration: none;
     }
     
     .presentacion2bis{
@@ -156,6 +161,7 @@ body{
         padding-top: 5px;
         color: #49516F;
         font-size: 20px;
+        text-decoration: none;
     }
     
     .presentacion3{
@@ -186,7 +192,9 @@ body{
     .videoinicio{
         padding:20px;
     }
-
+    .videoinicio img{
+        width: 100%;
+    }
 }
 
 /*PAGINA SERVICIOS*/
@@ -262,53 +270,8 @@ supongo que luego voy a poder hacer bien esto con grid*/
 
 /*PÁGINA GALERIA*/
 
-.titulo_galeria{
-    text-decoration: none;
-    color: #49516F;
-    padding: 10px;
-    text-align: left;
-    font-weight:bold;
-    justify-content: space-between;
-}
-.titulo_galeria ul {
-    list-style: none;
-    display: flex;
-}
-.titulo_galeria ul li{
-    padding: 10px;
-    margin-right: 40PX;
-}
-.titulo_galeria ul li a {
-    text-decoration: none;
-    font-weight:bold;
-    font-size:18px;
-}
-.contenedor_galeria{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.casamientos{
-    width: 240px;
-    margin: 15px;
-    padding: 20px;
-}
-.casamientos h5{
-    font-size: 16px;
-    text-decoration: none;
-    color: #49516F;
-    font-weight:bold;
-}
-.casamientos h3{
-    font-size: 14px;
-    text-decoration: none;
-    color: #49516F;
-    font-style: italic;
-}
-.casamientos img{
-    width:100%;
+.ContenedorCarrusel img{
+    
 }
 
 /*PÁGINA CONTACTO*/
