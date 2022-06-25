@@ -1,3 +1,4 @@
+/* Reseteamos los estilos */
 *{
     margin: 0;
     padding: 0;
@@ -273,6 +274,7 @@ supongo que luego voy a poder hacer bien esto con grid*/
 .titulo_galeria ul li a {
     text-decoration: none;
     font-weight:bold;
+    font-size:18px;
 }
 .contenedor_galeria{
     display: flex;
@@ -287,7 +289,7 @@ supongo que luego voy a poder hacer bien esto con grid*/
     padding: 20px;
 }
 .casamientos h5{
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
     color: #49516F;
     font-weight:bold;
