@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <nav>
-        <div class="logo">
+        <div class="logo" data-aos="fade-right">
             <a href="Index.html"><img width="150"  src="./assets/img/logogf.png" alt=""></a>
         </div>
         <ul>
@@ -24,15 +25,15 @@
         <div class="Inicio">
             <div class="columna1">
                 <p class="presentacion1">
-                Somos <a class="GF">Grupo Fiesta</a>, la mejor opción para que tu evento sea un éxito.
+                Somos <a class="GF" data-aos="fade-right">Grupo Fiesta</a>, la mejor opción para que tu evento sea un éxito.
                 <a class="presentacion2">Dejalo en nuestras manos....</a>
                 <a class="presentacion2bis">¡Sabemos cómo hacerlo!</a>
                 </p>
                 <ul class="presentacion3">
-                    <div class="desc"><img width="50" src="./assets/img/Organización.png"><li>Organización integral de eventos</li></div>
-                    <div class="desc"><img width="50" src="./assets/img/calendario2.png"><li>Eventos sociales y corporativos</li></div>
-                    <div class="desc"><img width="50" src="./assets/img/sonido.png"><li>Equipamiento tecnológico de alta calidad</li></div>
-                    <div class="desc"><img width="50" src="./assets/img/presupuesto.png"><li>Presupuestos personalizadoss</li></div>
+                    <div class="desc" data-aos="flip-left"><img width="50" src="./assets/img/Organización.png"><li>Organización integral de eventos</li></div>
+                    <div class="desc" data-aos="flip-right"><img width="50" src="./assets/img/calendario2.png"><li>Eventos sociales y corporativos</li></div>
+                    <div class="desc" data-aos="flip-left"><img width="50" src="./assets/img/sonido.png"><li>Equipamiento tecnológico de alta calidad</li></div>
+                    <div class="desc" data-aos="flip-right"><img width="50" src="./assets/img/presupuesto.png"><li>Presupuestos personalizadoss</li></div>
                 </ul>
             </div>
             <div class="columna2">
@@ -45,5 +46,9 @@
     <footer>
         <h5>©2022 nahiringiulla, todos los derechos reservados</h5>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
