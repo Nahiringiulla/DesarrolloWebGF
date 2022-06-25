@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*BODY DE TODA LA WEB*/
+
+body{
+    background-color: #F4F4F4;
+}
+
+/*NAVEGADOR DE TODA LA WEB*/
+
+
+    nav{
+        width: 100%;
+        background-color: #1B2030 ;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+
+    }
+    nav ul li{
+        padding: 10px;
+        margin-right: 40PX;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: #FFFF;
+        text-align: center;
+        font-weight:bold;
+    }
+    .logo{
+        margin-left: 15PX;
+        margin-top: 10px;
+    }
+
+/*MAIN*/
+
+/*APLICANDO GRID A INICIO*/
+
+/* vista desktop */
+@media only screen and (min-width: 1024px){
+
+.Inicio{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+
+}
+.presentacion1{
+    color: #49516F;
+    font-size: 30px;
+    margin-left: 60px;
+    margin-top: 60px;
+    font-weight:bold;
+}
+.GF{
+    color: #E7246E;
+}
+
+.presentacion2{
+    display: flex;
+    padding-top: 60px;
+    color: #49516F;
+    font-size: 20px;
+}
+
+.presentacion2bis{
+    display: flex;
+    padding-top: 5px;
+    color: #49516F;
+    font-size: 20px;
+}
+
+.presentacion3{
+    color: #49516F;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 20px;
+    column-gap: 30px;
+    margin-bottom: 50px;
+    margin-left: 60px;
+    margin-top: 30px;
+    padding-top: 70px;
+}
+.desc{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.desc li{
+    margin-left: 15px;
+}
+
+.videoinicio{
+    padding:20px;
+    margin-left: 80px;
+}
+}
+/* vista mobile */
+
+@media only screen and (max-width: 767px){
+    .Inicio{
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        align-items: center;
+
+    }
+    .presentacion1{
+        color: #49516F;
+        font-size: 30px;
+        margin-left: 20px;
+        margin-top: 60px;
+        font-weight:bold;
+    }
+    .GF{
+        color: #E7246E;
+    }
+    
+    .presentacion2{
+        display: flex;
+        padding-top: 60px;
+        color: #49516F;
+        font-size: 20px;
+    }
+    
+    .presentacion2bis{
+        display: flex;
+        padding-top: 5px;
+        color: #49516F;
+        font-size: 20px;
+    }
+    
+    .presentacion3{
+        color: #49516F;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        row-gap: 20px;
+        column-gap: 30px;
+        margin-bottom: 50px;
+        margin-left: 20px;
+        margin-top: 30px;
+        padding-top: 70px;
+    }
+    .desc{
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .desc li{
+        margin-left: 15px;
+    }
+    
+    .videoinicio{
+        padding:20px;
+    }
+
+}
+
+/*PAGINA SERVICIOS*/
+
+/* los servicios quiero que luego me queden bien centrados sin ningun margen ocupando toda la página 
+supongo que luego voy a poder hacer bien esto con grid*/
+
+/* vista desktop */
+@media only screen and (min-width: 1024px){
+
+.servicios{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 0px;
+    column-gap: 0px;
+}
+
+.servicios li{
+    list-style:none;
+    display: flex;
+}
+
+.servicios li img{
+    width: 100%;
+}
+}
+
+/* vista mobile */
+
+@media only screen and (max-width: 767px){
+    .servicios{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,1fr);
+        row-gap: 0px;
+        column-gap: 0px;
+    }
+    
+    .servicios li{
+        list-style:none;
+        display: flex;
+    }
+    
+    .servicios li img{
+        width: 100%;
+    }
+
+}
+
+/*PÁGINA NOSOTROS*/
+
+.main_nosotros {
+    background-image: url("../img/imagen33.png");
+    background-size: 100%;
+    background-position: center;
+}
+.main_nosotros h4{
+    font-size: 35px;
+    color: #FFFF;
+    text-align: center;
+    font-weight:bold;
+    padding-top: 40px;
+    padding-bottom:10px;
+}
+.nosotros{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(5);
+    row-gap: 30px;
+    padding: 40px;
+}
+.fila{
+    font-size: 20px;
+    color: #FFFF;
+    font-style: oblique;
+    text-align: center;
+    font-weight:bold;
+}
+
+/*PÁGINA GALERIA*/
+
+.titulo_galeria{
+    text-decoration: none;
+    color: #49516F;
+    padding: 10px;
+    text-align: left;
+    font-weight:bold;
+    justify-content: space-between;
+}
+.titulo_galeria ul {
+    list-style: none;
+    display: flex;
+}
+.titulo_galeria ul li{
+    padding: 10px;
+    margin-right: 40PX;
+}
+.titulo_galeria ul li a {
+    text-decoration: none;
+    font-weight:bold;
+}
+.contenedor_galeria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.casamientos{
+    width: 240px;
+    margin: 15px;
+    padding: 20px;
+}
+.casamientos h5{
+    font-size: 18px;
+    text-decoration: none;
+    color: #49516F;
+    font-weight:bold;
+}
+.casamientos h3{
+    font-size: 14px;
+    text-decoration: none;
+    color: #49516F;
+    font-style: italic;
+}
+.casamientos img{
+    width:100%;
+}
+
+/*PÁGINA CONTACTO*/
+/*PÁGINA CONTACTO - REDES SOCIALES*/
+
+/* vista desktop */
+@media only screen and (min-width: 1024px){
+.Gridredes{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1fr);
+    row-gap: 0px;
+    column-gap:0px;
+    align-items: center;
+    margin-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+}
+/* vista mobile */
+@media only screen and (max-width: 767px){
+    .Gridredes{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+        row-gap: 0px;
+        column-gap:0px;
+        align-items: center;
+        margin-left: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+.columnaredes1 h3{
+    color: #49516F;
+    font-size: 20px;
+}
+.columnaredes2 ul a{
+    list-style: none;
+    display:inline-block;
+    font-size: 20px;
+}
+
+/*PÁGINA CONTACTO - FORMULARIO*/
+
+/* vista desktop */
+@media only screen and (min-width: 1024px){
+.GridContacto{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1fr);
+    row-gap: 0px;
+    column-gap: 0px;
+    align-items: center;
+}
+.contacto{
+    margin-left: 40px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+}
+
+.contacto h3{
+    margin-bottom: 10px;
+    color: #E7246E;
+    font-weight:bold;
+    font-size: 20px;
+}
+.contenedor_contacto{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.formulario{
+    color: #49516F;
+    width:450;
+    margin: 15px;
+    padding: 10px;
+}
+.formulario label{
+    font-weight:bold;
+    font-size: 18px;
+}
+.formulario input{
+    width: 30%;
+    font-size: 12px;
+    border-style:solid;
+    border-width:0.2px;
+}
+.boton_enviar{
+    font-weight:bold;
+    color: #FFFF;
+    background-color:#49516F;
+    border-color:#49516F;
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+
+/* vista mobile */
+@media only screen and (max-width: 767px){
+    .GridContacto{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1fr);
+        row-gap: 0px;
+        column-gap: 0px;
+    }
+    .contacto{
+        margin-left: 40px;
+        margin-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+/*PÁGINA CONTACTO - IMÁGENES*/ 
+
+/* vista desktop */
+@media only screen and (min-width: 1024px){
+    .contacto_img{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1fr);
+        padding-left: 15px;
+        padding-top: 30px;
+        row-gap: 5px;
+        column-gap: 0px;
+    }
+    }
+/* vista mobile */
+@media only screen and (max-width: 767px){
+.contacto_img{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1fr);
+    padding-left: 15px;
+    padding-top: 10px;
+    row-gap: 5px;
+    column-gap: 0px;
+    margin-left: 40px;
+    padding-bottom: 10px;
+}
+}
+/*FOOTER DE TODA LA WEB*/
+
+footer{
+    color: #FFFF;
+    width: 100%;
+    height: 50px;
+    background-color: #1B2030 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer h5{
+    margin-left: 15px;
+}
