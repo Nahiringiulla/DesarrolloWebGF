@@ -5,7 +5,6 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
 /*BODY DE TODA LA WEB*/
 
 body{
@@ -48,12 +47,12 @@ body{
             align-items: center;
         }
         .navbar-toggler{
-        color: #F4F4F4;
+        background-color:  #ffff;
+       /* border-color: #E7246E ; */
+        
         }
 
-        .navbar-toggler-icon{
-        color: #E7246E;
-        }
+
     }    
 
 /*MAIN*/
@@ -197,46 +196,6 @@ body{
     }
 }
 
-/*PAGINA SERVICIOS*/
-
-/* los servicios quiero que luego me queden bien centrados sin ningun margen ocupando toda la página 
-supongo que luego voy a poder hacer bien esto con grid*/
-
-.servicios li{
-    list-style:none;
-    display: flex;
-}
-
-.servicios li img{
-    width: 100%;
-}
-
-/* vista desktop */
-@media only screen and (min-width: 768px){
-
-.servicios{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
-    padding: 0px;
-    row-gap: 0px;
-    column-gap: 0px;
-    margin:0px;
-}
-}
-
-/* vista mobile */
-
-@media only screen and (max-width: 767px){
-    .servicios{
-        display:grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(4,1fr);
-        padding: 0px;
-        row-gap: 0px;
-        column-gap: 0px;
-    }
-}
 
 /*PÁGINA NOSOTROS*/
 
@@ -270,8 +229,12 @@ supongo que luego voy a poder hacer bien esto con grid*/
 
 /*PÁGINA GALERIA*/
 
-.ContenedorCarrusel img{
-    
+.carousel-inner img {
+    max-height: auto;
+}
+
+.carousel-inner{
+    height: auto;
 }
 
 /*PÁGINA CONTACTO*/
