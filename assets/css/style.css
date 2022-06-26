@@ -240,45 +240,27 @@ body{
 /*PÁGINA CONTACTO*/
 /*PÁGINA CONTACTO - REDES SOCIALES*/
 
-/* vista desktop */
-@media only screen and (min-width: 768px){
-.Gridredes{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(1fr);
-    row-gap: 0px;
-    column-gap:0px;
+.Gridredes ul a{
+    display: inline-block;
     align-items: center;
-    margin-left: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-}
-/* vista mobile */
-@media only screen and (max-width: 767px){
-    .Gridredes{
-        display:grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(2,1fr);
-        row-gap: 0px;
-        column-gap:0px;
-        align-items: center;
-        margin-left: 40px;
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-}
-.columnaredes1 h3{
-    color: #49516F;
-    font-size: 20px;
-}
-.columnaredes2 ul a{
+    justify-content: space-between;
     list-style: none;
-    display:inline-block;
-    font-size: 20px;
 }
 
 /*PÁGINA CONTACTO - FORMULARIO*/
+
+.contacto{    
+    margin-left: 40px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+.contacto h3{
+    color: #E7246E;
+    font-weight:bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
 
 .form-group{
     color: #49516F;
@@ -287,119 +269,40 @@ body{
     padding: 0px;
 }
 
+.form-group select{
+    width: 40%;
+    font-size: 12px;
+    border-style:solid;
+    border-width:0.2px;
+
+}
 .form-group label {
     font-weight:bold;
     font-size: 18px;
-    padding-left: 5px;
+    padding-left: 0px;
 }
 
 .form-group input{
-    width: 30%;
+    width: 40%;
     font-size: 12px;
     border-style:solid;
     border-width:0.2px;
 }
 
-
-/* vista desktop */
-@media only screen and (min-width: 768px){
-.GridContacto{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(1fr);
-    row-gap: 0px;
-    column-gap: 0px;
-    align-items: center;
-}
-.contacto{
-    margin-left: 40px;
-    margin-top: 40px;
-    padding-bottom: 40px;
-}
-}
-
-.contacto h3{
-    margin-bottom: 10px;
-    color: #E7246E;
-    font-weight:bold;
-    font-size: 20px;
-}
-.contenedor_contacto{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-.formulario{
-    color: #49516F;
-    width:450;
-    margin: 15px;
-    padding: 10px;
-}
-
-.formulario label{
-    font-weight:bold;
-    font-size: 18px;
-}
-.formulario input{
-    width: 30%;
+.form-group textarea{
+    width: 40%;
     font-size: 12px;
     border-style:solid;
     border-width:0.2px;
 }
-.boton_enviar{
-    font-weight:bold;
-    color: #FFFF;
-    background-color:#49516F;
-    border-color:#49516F;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 5px;
+
+.btn{
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
 }
 
-/* vista mobile */
-@media only screen and (max-width: 767px){
-    .GridContacto{
-        display:grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(1fr);
-        row-gap: 0px;
-        column-gap: 0px;
-    }
-    .contacto{
-        margin-left: 40px;
-        margin-top: 0px;
-        padding-bottom: 0px;
-    }
-}
-
-/*PÁGINA CONTACTO - IMÁGENES*/ 
-
-/* vista desktop */
-@media only screen and (min-width: 768px){
-    .contacto_img{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(1fr);
-        padding-left: 15px;
-        padding-top: 30px;
-        row-gap: 5px;
-        column-gap: 0px;
-    }
-    }
-/* vista mobile */
-@media only screen and (max-width: 767px){
-.contacto_img{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(1fr);
-    padding-left: 15px;
-    padding-top: 10px;
-    row-gap: 5px;
-    column-gap: 0px;
-    margin-left: 40px;
-    padding-bottom: 10px;
-}
-}
 /*FOOTER DE TODA LA WEB*/
 
 footer{
