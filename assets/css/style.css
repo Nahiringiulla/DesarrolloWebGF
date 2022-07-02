@@ -48,8 +48,6 @@ body{
         }
         .navbar-toggler{
         background-color:  #ffff;
-       /* border-color: #E7246E ; */
-        
         }
 
 
@@ -67,16 +65,20 @@ body{
     grid-template-columns:repeat(2,1fr);
 
 }
+
 .presentacion1{
     color: #49516F;
     font-size: 30px;
     margin-left: 60px;
     margin-top: 60px;
     font-weight:bold;
+    text-decoration: none;
 }
+
 .GF{
     color: #E7246E;
     text-decoration: none;
+    text-emphasis: none;
 }
 
 .presentacion2{
@@ -102,11 +104,12 @@ body{
     grid-template-rows: repeat(2,1fr);
     row-gap: 20px;
     column-gap: 30px;
-    margin-bottom: 50px;
-    margin-left: 60px;
-    margin-top: 30px;
-    padding-top: 70px;
+    padding: 0px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left:60px ;
 }
+
 .desc{
     list-style: none;
     text-decoration: none;
@@ -170,10 +173,11 @@ body{
         grid-template-rows: repeat(2,1fr);
         row-gap: 20px;
         column-gap: 30px;
+        padding: 0px;
         margin-bottom: 50px;
-        margin-left: 20px;
-        margin-top: 30px;
-        padding-top: 70px;
+        margin-top: 50px;
+        margin-left:20px ;
+ 
     }
     .desc{
         list-style: none;
@@ -190,6 +194,7 @@ body{
     
     .videoinicio{
         padding:20px;
+        margin-bottom: 3px;
     }
     .videoinicio img{
         width: 100%;
@@ -229,12 +234,40 @@ body{
 
 /*PÁGINA GALERIA*/
 
-.carousel-inner img {
-    max-height: auto;
+.ContenedorCarrusel h5{
+   color: #FFFF;
+   font-weight: bold;
+   font-size: 20px;
 }
 
-.carousel-inner{
-    height: auto;
+/* vista desktop */
+@media only screen and (min-width: 768px){
+.ContenedorCarrusel{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 0px;
+    column-gap: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-top: 0px
+}
+}
+
+/* vista mobile */
+@media only screen and (max-width: 767px){
+.ContenedorCarrusel{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,1fr);
+    row-gap: 0px;
+    column-gap: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-top: 0px
+}
 }
 
 /*PÁGINA CONTACTO*/
@@ -294,6 +327,7 @@ body{
     font-size: 12px;
     border-style:solid;
     border-width:0.2px;
+    margin-top: 5px;
 }
 
 .btn{
